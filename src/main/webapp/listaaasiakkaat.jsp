@@ -5,23 +5,25 @@
 <head>
 <meta charset="ISO-8859-1">
 <script src="scripts/main2.js"></script>
-<link href="scripts/style.css" rel="stylesheet" type="text/css">
-<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<title>Asiakkaiden listaus</title>
 </head>
 <body>
 	<table id="listaus">
 		<thead>
 			<tr>
-				<th class="item1" colspan="2">Hakusana:</th>
-				<th class="item2"><input type="text" id="hakusana"></th>
-				<th class="item3"><input type="button" value="Hae"
-					id="hakunappi" onclick="haeAsiakkaat()"></th>
+				<th colspan="5" class="oikealle"><a id="linkki" href="lisaaasiakas.jsp">Lisää uusi asiakas</a></th>
 			</tr>
 			<tr>
-				<th class="item4">Etunimi</th>
-				<th class="item5">Sukunimi</th>
-				<th class="item6">Puhelin</th>
-				<th class="item7">Sposti</th>
+				<th>Hakusana:</th>
+				<th colspan="3"><input type="text" id="hakusana"></th>
+				<th><input type="button" value="Hae" id="hakunappi" onclick="haeAsiakkaat()"></th>
+			</tr>
+			<tr>
+				<th>Etunimi</th>
+				<th>Sukunimi</th>
+				<th>Puhelin</th>
+				<th>Sposti</th>
 				<th></th>
 			</tr>
 		</thead>
